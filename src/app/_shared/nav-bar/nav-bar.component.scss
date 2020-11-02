@@ -8,12 +8,17 @@ header {
 }
 
 nav a {
-    margin: 2rem;
+    padding: 1rem 1.5rem;
     color: #181818;
 }
 
 nav a:not(:last-child) {
     text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #000000;
+    color: #FFFFFF;
 }
 
 @media only screen and (max-width: 992px) {

@@ -36,6 +36,114 @@
     content: url("/assets/icons/play.svg");
 }
 
-.play-video img:active {
+.play-video img:hover {
     content: url("/assets/icons/play-active.svg");
+}
+
+/* Section 2 */
+.s2-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 4rem 2rem;
+    grid-template-areas:
+    "call-item map-item"
+    "email-item email-item";
+
+    width: 70vw;
+    height: 90vh; /* DELETE */
+}
+
+.call-item { grid-area: call-item; }
+.map-item { grid-area: map-item; }
+.email-item { grid-area: email-item; }
+
+.s2-icons {
+    width: 7rem;
+}
+
+.s2-grid-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+
+/* Section 3 */
+.s3-who {
+    display: flex;
+    justify-content: space-between;
+    width: 35rem;
+}
+
+.s3 .s3-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem 1rem;
+
+}
+
+/* Section 4 */
+.projects-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 1rem 1rem;
+    grid-template-areas:
+    "one two two three"
+    "four five five five"
+    "four five five five";
+
+    
+    min-height: 80vh;  /* DELETE */
+}
+
+.one { grid-area: one; }
+.two { grid-area: two; }
+.three { grid-area: three; }
+.four { grid-area: four; }
+.five { grid-area: five; }
+
+
+
+/* Request Quote */
+.quote-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 25vh;
+    margin-left: 1rem;
+}
+
+.quote-container .or {
+    margin-top: 2rem;
+    margin-left: 1rem;
+}
+
+.quote-link {
+    background-color: #000000;
+    border: none;
+    color: white;
+    padding: 1.5rem 3rem;
+    font-family: "Roboto";
+    font-size: 2.2vh;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    width: 7rem;
+}
+
+.quote-link:hover {
+    background-color: #EEEEEE;
+    color: #000000;
+}
+
+.email-link {
+    display: inline;
+    color: #000000;
+    font-weight: normal;
 }
