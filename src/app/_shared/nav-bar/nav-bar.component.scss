@@ -1,0 +1,23 @@
+header {
+    margin: 3vh 5.5vw 12vh 5.5vw;
+    height: 12vh;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    margin: 2rem;
+    color: #181818;
+}
+
+nav a:not(:last-child) {
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 992px) {
+    nav a {
+        margin: 1rem;
+    }
+}

@@ -1,0 +1,41 @@
+
+.section {
+    margin-top: 12vh;
+    margin-bottom: 12vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.heading {
+    margin-bottom: 8vh;
+    color: #181818;
+    font-size: 9vh;
+    line-height: 10vh;
+}
+
+.sub-heading {
+    margin-bottom: 4vh;
+    font-size: 2.4vh;
+    line-height: 3.3vh;
+}
+
+.projects-link {
+    color: #000000;
+}
+
+/* TODO: ADD ANIMATED SVG AND REMOVE THIS */
+.check-out {
+    height: 15vh;
+}
+
+.play-video {
+    align-self: flex-end;
+}
+
+.play-video img {
+    content: url("/assets/icons/play.svg");
+}
+
+.play-video img:active {
+    content: url("/assets/icons/play-active.svg");
+}
